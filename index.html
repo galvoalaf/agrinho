@@ -3,40 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agrinho 2024</title>
+    <title>Site de Apostas</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Agrinho 2024</h1>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#programacao">Programação</a></li>
-                <li><a href="#inscricoes">Inscrições</a></li>
-                <li><a href="https://github.com/seu-usuario/Agrinho2024" target="_blank">GitHub</a></li>
-            </ul>
-        </nav>
+        <h1>Site de Apostas</h1>
     </header>
 
-    <section id="sobre">
-        <h2>Sobre o Agrinho 2024</h2>
-        <p>Aqui você pode colocar informações sobre o Agrinho 2024.</p>
-    </section>
+    <main>
+        <section id="aposta">
+            <h2>Faça sua aposta</h2>
+            <form id="apostaForm">
+                <label for="valor">Valor da aposta:</label>
+                <input type="number" id="valor" name="valor" min="1" required>
+                <button type="submit">Apostar</button>
+            </form>
+        </section>
 
-    <section id="programacao">
-        <h2>Programação</h2>
-        <p>Descreva aqui a programação do Agrinho 2024.</p>
-    </section>
-
-    <section id="inscricoes">
-        <h2>Inscrições</h2>
-        <p>Informações sobre como se inscrever no Agrinho 2024.</p>
-    </section>
+        <section id="resultado" style="display: none;">
+            <h2>Resultado da aposta</h2>
+            <p id="mensagemResultado"></p>
+        </section>
+    </main>
 
     <footer>
         <p>Desenvolvido por Seu Nome | <a href="https://github.com/seu-usuario" target="_blank">GitHub</a></p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
